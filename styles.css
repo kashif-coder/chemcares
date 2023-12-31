@@ -306,6 +306,7 @@
         animation: reveal 3000ms ease-in-out forwards 200ms,
             glow 1500ms linear infinite 4000ms;
     }
+   
 
     @keyframes reveal {
         80% {
