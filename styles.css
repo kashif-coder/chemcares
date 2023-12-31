@@ -93,7 +93,7 @@
 
     .header .logo img {
         height: 6rem;
-        border-radius: 10px 30px;
+        border-radius: 28px 30px ;
     }
 
     .header .navbar a {
@@ -397,6 +397,7 @@
     }
 
     .about .row .image img {
+        /* filter: drop-shadow(30px 10px 4px #4444dd); */
         border-radius: 10px;
         width: 100%;
     }
@@ -451,8 +452,15 @@
     }
 
     .products .box-container .box .image img {
+        filter: drop-shadow(25px 15px 9px #07128e);
         height: 25rem;
+        transition: all 0.3s linear 0s;   
         border-radius: 10px;
+    }
+    .products .box-container .box .image img:hover{
+        /* -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8); */
+        transform: scale(1.1);
     }
 
     .products .box-container .box .content h3 {
@@ -478,6 +486,43 @@
         text-decoration: line-through;
         font-weight: lighter;
         font-size: 1.5rem;
+    }
+
+    .mission .row {
+        display: flex;
+        align-items: center;
+        background: rgba(145, 215, 243, 0.629);
+        flex-wrap: wrap;
+        border-radius: 30px;
+        
+    }
+
+    .mission .row .image {
+        flex: 1 1 45rem;
+    }
+    
+    .mission .row .image img {
+        box-shadow: 5px 5px 10px red;
+        /* filter: drop-shadow(30px 10px 4px #4444dd); */
+        border-radius: 30px;
+        width: 100%;
+    }
+
+    .mission .row .content {
+        flex: 1 1 45rem;
+        padding: 2rem;
+    }
+
+    .mission .row .content h3 {
+        font-size: 3rem;
+        color: #fff;
+    }
+
+    .mission .row .content p {
+        font-size: 1.6rem;
+        color: #230d0d;
+        padding: 1rem 0;
+        line-height: 1.7;
     }
 
     .service .box-container {
@@ -713,6 +758,7 @@
     }
 
     .about-col h1 {
+        color: rgb(116, 3, 3);
         padding-top: 0;
         font-size: 2rem;
     }
