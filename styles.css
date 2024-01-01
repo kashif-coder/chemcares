@@ -1096,6 +1096,78 @@
 
     /* Projects page ends */
 
+/* miscellaneous page starts */
+
+body{
+    background: #2e8d86;
+}
+.misc-content{
+    width: 80%;
+    margin: 80px auto;
+}
+.misc-content h1 {
+    padding: 60px 0;
+    color: azure;
+    font-size: 44px;
+    text-align: center;
+}
+.misc-content  p{
+    color: rgb(213, 240, 6);
+    font-size: 12px;
+    text-align: center;
+}
+.misc-container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: all 700ms ease-in;
+}
+
+.panel h1 {
+    font-size: 35px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h1 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+    .misc-container {
+        width: 100vw;
+        transition: opacity 0.3s ease-in 0.4s;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
+
+
+/* miscellaneous page ends */
+
 
     /* Contact page starts */
     .sub-contact {
